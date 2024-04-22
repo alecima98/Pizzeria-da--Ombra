@@ -1,0 +1,272 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-position {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background-color: bisque;
+
+  z-index: 4000;
+}
+
+/* hero */
+.shift-hero-section {
+  margin-top: 76px;
+}
+
+.hero-container {
+  position: relative;
+  /* overflow serve a nascondere le parti di overlay e di immagine che fuoriescono dai bordi stondati */
+  overflow: hidden;
+}
+
+.hero-img-bg {
+  background-image: url("https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-2048x1365.jpg");
+  height: 90vh;
+  color: white;
+  border-radius: 20px;
+}
+
+.opacity-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  width: 100%;
+}
+
+.text-layer {
+  z-index: 2000;
+}
+
+.btn-style {
+  background-color: bisque;
+  border: 2px solid bisque;
+  border-radius: 3px;
+
+  padding: 12px 24px;
+
+  letter-spacing: 2px;
+
+  margin-top: 50px;
+}
+
+.btn-hoverable {
+  transition-duration: 0.4s;
+}
+
+.btn-hoverable:hover {
+  background-color: #aa5204; /* Green */
+  color: white;
+}
+
+.h1-hero {
+  font-size: 80px;
+  text-shadow: -1px 1px 1px rgba(29, 29, 29, 0.25);
+}
+
+.h2-hero {
+  font-size: 20px;
+  text-shadow: -1px 1px 1px rgba(29, 29, 29, 0.25);
+}
+
+.text-layer div{
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 42px;
+  text-shadow: -1px 1px 1px rgba(29, 29, 29, 0.25);
+}
+
+h3 {
+  font-size: 26px;
+  text-shadow: -1px 1px 1px rgba(29, 29, 29, 0.25);
+}
+
+.text-size h4{
+  font-size: 24px;
+  font-weight: 500;
+}
+.text-size div{
+  font-size: 32px;
+}
+
+.p-sect {
+  font-size: 16px;
+}
+
+.img-fit {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.img-container {
+  position: relative;
+  min-height: 400px;
+}
+
+.img-bottom-left {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 45%;
+  height: 60%;
+
+  z-index: 500;
+}
+
+.img-top-right:hover {
+  z-index: 600;
+}
+
+.img-top-right {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 80%;
+  height: 90%;
+
+  z-index: 400;
+}
+.img-bottom-right {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  width: 45%;
+  height: 60%;
+
+  z-index: 500;
+}
+
+.img-top-left {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 80%;
+  height: 90%;
+
+  z-index: 400;
+}
+
+.img-top-left:hover {
+  z-index: 600;
+}
+
+.sect4-style {
+  background-color: rgb(33, 33, 33);
+  color: white;
+}
+
+.square {
+  position: relative;
+}
+
+.square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.square img {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.motto {
+  font-size: 86px;
+}
+
+.hr {
+  border: 5px solid gray;
+  width: 10%;
+  height: 10px;
+}
+
+.motto-autor {
+  font-size: 32px;
+}
+
+.bg-color-black {
+  background-color: rgb(60, 60, 60);
+  color: white;
+}
+
+
+
+.sect7-style {
+  background-color: rgb(60, 60, 60);
+  color: white;
+}
+
+.input-text {
+  all: unset;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+
+.input-tel {
+  all: unset;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+.input-number {
+  all: unset;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+
+.input-date {
+  all: unset;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+
+.message-area {
+  all: unset;
+  background-color: rgb(91, 91, 91);
+  border-bottom: 1px solid white;
+  color: white;
+  width: 100%;
+  height: 100px;
+}
+
+.bg-footer {
+  background-color: black;
+  min-height: 30vh;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-img-bg {
+    background-image: url("https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-2048x1365.jpg");
+    background-position: 50%;
+    height: 90vh;
+    color: white;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 731px) {
+  .motto {
+    font-size: 50px;
+  }
+}
