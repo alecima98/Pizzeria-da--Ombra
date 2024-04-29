@@ -7,7 +7,7 @@ function formSubmit() {
     const loading = document.querySelector("#message-loading");
     const error = document.querySelector("#message-error");
 
-    //
+    // Nascondo i messaggi aggingendo l'attributo d-none 
     loading.classList.add("d-none");
     success.classList.add("d-none");
     error.classList.add("d-none");
